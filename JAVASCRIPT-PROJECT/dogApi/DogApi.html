@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogApi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div id="dog1">
+            <div id="dog">
+                <div id="dog11">
+                    <img src="img/dog1.jpg">
+                </div>
+                <div id="dog12">
+                    <h1>Dog Api</h1>
+                </div>
+            </div>
+            <img src="" id="img-src" alt="" width="300px" height="300px"><br><br>
+            <div id="dog2">
+            <button onclick="add()">Add</button>
+        </div>
+        </div>
+    </section>
+</body>
+<script>
+    add=()=>{
+        var url="https://dog.ceo/api/breeds/image/random";
+
+        fetch(url)
+        .then(response=>response.json())
+        .then(data=>{
+
+            document.getElementById('img-src').src=data.message;
+        });
+    }
+</script>
+</html>

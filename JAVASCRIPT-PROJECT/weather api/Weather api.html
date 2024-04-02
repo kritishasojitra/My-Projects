@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+    <div class="main">
+    <div class="card">
+        <div class="search">
+
+            <input type="text" placeholder="enter city name" id="databtn" spellcheck="false">
+            <button type="button" onclick="get()" id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+        
+        </div>
+
+        <div class="weather">
+
+            
+            <img src="" id="icn" alt="" class="weather-icon">
+            <h1 class="temp" id="sc"></h1>
+            <h2 class="city" id="ct" ></h2>
+            </div>
+
+            <div class="details">
+                <div class="col">
+                        <p class="humidity" id="hr" style="color:white; margin-top:10px"></p>
+                        <h5 style="color:white;  font-size:20px; font-weight: bold; margin-top: 10px;">humiditiy</h5>
+                    </div>
+
+                <div class="col">
+                        <p class="wind" id="speed" style="color:white; margin-top:10px"></p>
+                        <h5 style="color:white;  font-size: 20px; font-weight: bold; margin-top: 10px;">wind Speed</h5>
+                        </div>
+                         <div class="col">
+                        <p class="wind" id="vi" style="color:white; margin-top:10px"></p>
+                        <h5 style="color:white;  font-size:20px; font-weight:bold; margin-top:10px ;">visibility</h5>
+                        </div>
+                         <div class="col">
+                        <p class="wind" id="pr" style="color:white; margin-top:10px"></p>
+                        <h5 style="color:white; font-size: 20px; font-weight: bold; margin-top: 10px;">Pressure</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</body>
+<script>
+    get=()=>{
+        let data=document.getElementById('databtn').value;
+
+const apikey=`fce2035dbba443f599152240230712`;
+const apiurl=`http://api.weatherapi.com/v1/current.json?key=fce2035dbba443f599152240230712&q=${data}&aqi=no
+`;
+        fetch(apiurl)
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data)
+            document.getElementById('ct').innerHTML=data.location.name;
+            document.getElementById('sc').innerHTML=data.current.temp_c;
+            document.getElementById('speed').innerHTML=data.current.wind_kph + " kmph";
+            document.getElementById('hr').innerHTML=data.current.humidity + "%";
+            document.getElementById('icn').src=data.current.condition.icon;
+            document.getElementById('vi').innerHTML=data.current.vis_km + "Km";
+            document.getElementById('pr').innerHTML=data.current.pressure_mb + "mb";
+        });
+
+
+        
+
+    };
+</script>
+
+
+</html>

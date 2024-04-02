@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Slider</title>
+    <style>
+      div {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        /* border: 1px solid black; */
+      }
+      .con {
+        width: 60%;
+        height: 70%;
+      }
+      .con img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+      .fa-solid {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <i class="fa-solid fa-circle-arrow-left" onclick="previous()"></i>
+      <div class="con">
+        <img src="img/i1.jpg" alt="" class="image" />
+        <img src="img/i4.jpg" alt="" class="image" />
+        <img src="img/i5.jpg" alt="" class="image" />
+        <img src="img/i8.jpg" alt="" class="image" />
+        <img src="img/i2.jpg" alt="" class="image" />
+        <img src="img/i3.jpg" alt="" class="image" />
+        <img src="img/i6.jpg" alt="" class="image" />
+        <img src="img/i7.jpg" alt="" class="image" />
+        <img src="img/i8.jpg" alt="" class="image" />
+        <img src="img/i9.jpg" alt="" class="image" />
+        <img src="img/i10.webp" alt="" class="image" />
+      </div>
+      <i  class="fa-solid fa-circle-arrow-right" onclick="next()"></i>
+    </div>
+  </body>
+  <script>
+    var counter = 0;
+    let ar;
+
+    function slider() {
+      ar = document.getElementsByClassName("image");
+      for (var i = 0; i < ar.length; i++) {
+        ar[i].style.display = "none";
+      }
+      ar[counter].style.display = "block";
+      setTimeout(slider, 10);
+    }
+    slider();
+    function next() {
+      counter++;
+      if (counter >= ar.length) {
+        counter = 0;
+      }
+    }
+    next();
+    function previous() {
+      if (counter > 0) {
+        counter--;
+      } else {
+        counter = ar.length - 1;
+      }
+    }
+    previous();
+  </script>
+</html>
