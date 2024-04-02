@@ -1,0 +1,443 @@
+@media(min-width:0px) and (max-width:480px){
+    header {
+        height:650px;
+    }
+    .container{
+        height:auto;
+        top: 0px;
+        position: absolute;
+        flex-direction: column;
+    }
+    .logo{
+        width: 50%;
+    }
+    #bar{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        font-size: 25px;
+    }
+    #bat{
+        display: block;
+        position: absolute;
+        right:30px;
+        top: 42px;
+        font-size: 25px;
+    }
+    nav{
+        position: absolute;
+        width: 50%;
+        height: 400px;
+        background-color: #EEEEEE;
+        top: 0px;
+        right:0px;
+        display: none;
+        border-radius: 10px 0px 10px 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        margin-top: 150px;
+        line-height: 40px;
+    }
+    .s1{
+        height: 300px;
+        width: 80%;
+        /* margin-top: 20px; */
+    }
+    .s1 .but{
+        margin-top:20px;
+    }
+    .s1 h3{
+        font-size:30px;
+    }
+    .s1 p{
+        font-size:18px;
+    }
+    .st1{
+        height:auto;
+    }
+    .sw1{
+        height:auto;
+        flex-direction: column;
+    }
+    .w1{
+        width:80%;
+        height:400px;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .w2{
+        width:80%;
+        height:400px;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .tex1 h5{
+        margin-top:20px;
+    }
+    .tex2 h5{
+        margin-top:10px;
+    }
+    .sw2{
+        height:auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:30px;
+    }
+     .sw2 .w3{
+        height:200px;
+        width: 48%;
+        margin-top: 20px;
+        border: 7px double;
+    }
+    .st2{
+        height:auto;
+    }
+    .sw3{
+        height:auto;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .sw3 .w4{
+        width:50%;
+        height: 350px;
+        margin-left: 120px;
+        margin-top:20px;
+    }
+    .slider{
+        height:auto;
+    }
+    .o1{
+        margin-top:30px;
+    }
+    .st4{
+        width:100%;
+        height:auto;
+    }
+    .sw4{
+        width:100%;
+        height:auto;
+    }
+    .w6{
+        width:50%;
+        height: 400px;
+    }
+   .w6 .e1{
+        margin-left: 170px;
+        top:60px;
+        width: 40%;
+        height:100px;
+    }
+    .e1 h1{
+        font-size:20px
+    }
+    .w7{
+        width:50%;
+        height: 400px;
+    }
+    .w7 h3{
+        font-size:20px;
+        margin-top: 50px;
+    }
+    .w7 h1{
+        font-size:50px;
+    }
+    .w7 h4{
+        font-size:20px;
+    }
+    .w7 p{
+        font-size:18px;
+    }
+    .w7 button{
+        width:40%;
+        margin-top: 40px;
+    }
+    .swiper{
+        margin-top:40px;
+    }
+}
+@media(min-width:481px) and (max-width:720px){
+    header {
+        height:650px;
+    }
+    .container{
+        height:auto;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+    }
+    .logo{
+        width: 50%;
+    }
+    #bar{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        font-size: 25px;
+    }
+    #bat{
+        display: block;
+        position: absolute;
+        right:30px;
+        top: 42px;
+        font-size: 25px;
+    }
+    nav{
+        position: absolute;
+        width: 40%;
+        height: 400px;
+        background-color: #EEEEEE;
+        top: 0px;
+        right:0px;
+        display: none;
+        border-radius: 10px 0px 10px 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        margin-top: 150px;
+        line-height: 40px;
+    }
+    .s1{
+        height: 300px;
+        width: 80%;
+        /* margin-top: 20px; */
+    }
+    .s1 .but{
+        margin-top:20px;
+    }
+    .s1 h3{
+        font-size:40px;
+    }
+    .s1 p{
+        font-size:18px;
+    }
+    .st1{
+        height:auto;
+    }
+    .sw1{
+        height:auto;
+        flex-direction: column;
+    }
+    .w1{
+        width:60%;
+        height:400px;
+        margin-top: 30px;
+        margin-left: 150px;
+    }
+    .w2{
+        width:60%;
+        height:400px;
+        margin-top: 30px;
+        margin-left: 150px;
+    }
+    .tex1 h5{
+        margin-top:20px;
+    }
+    .tex2 h5{
+        margin-top:10px;
+    }
+    .sw2{
+        height:auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:30px;
+    }
+     .sw2 .w3{
+        height:200px;
+        width: 40%;
+        margin-top: 20px;
+        border: 10px double;
+    }
+    .st2{
+        height:auto;
+    }
+    .sw3{
+        height:auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        margin-top: 30px;
+    }
+    .sw3 .w4{
+        width:40%;
+        height: 350px;
+        margin-top:20px;
+    }
+    .slider{
+        width:100%;
+        height: auto;
+        margin-left:5px;
+    }
+    .o1{
+        margin-top:30px;
+    }
+    .st4{
+        width:100%;
+        height:auto;
+    }
+    .sw4{
+        width:100%;
+        height:auto;
+    }
+    .w6{
+        width:50%;
+        height: 400px;
+    }
+   .w6 .e1{
+        margin-left: 280px;
+        top:60px;
+        width: 30%;
+        height:110px;
+    }
+    .e1 h1{
+        font-size:20px
+    }
+    .w7{
+        white:50%;
+        height: 400px;
+    }
+    .w7 h3{
+        font-size:20px;
+        margin-top: 50px;
+    }
+    .w7 h1{
+        font-size:50px;
+    }
+    .w7 h4{
+        font-size:20px;
+    }
+    .w7 p{
+        font-size:18px;
+    }
+    .w7 button{
+        width:40%;
+        margin-top: 40px;
+    }
+    .swiper{
+        margin-top:40px;
+    }
+}
+@media(min-width:721px) and (max-width:980px){
+    header {
+        height:700px;
+    }
+    .container{
+        height:auto;
+    }
+    .logo h1{
+        font-size:30px;
+    }
+    nav{
+        width: 80%;
+    }
+    .s1{
+        margin-top:50px;
+        width: 80%;
+    }
+    .st1{
+        height:auto;
+    }
+    .sw1{
+        height:auto;
+        /* flex-direction: column; */
+    }
+    .w1{
+        width:45%;
+        height:400px;
+        margin-top: 30px;
+        /* margin-left: 150px; */
+    }
+    .w2{
+        width:45%;
+        height:400px;
+        margin-top: 30px;
+        /* margin-left: 150px; */
+    }
+    .tex1 h5{
+        margin-top:20px;
+    }
+    .tex2 h5{
+        margin-top:10px;
+    }
+    .sw2{
+        height:auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:30px;
+    }
+     .sw2 .w3{
+        height:200px;
+        width: 40%;
+        margin-top: 20px;
+        border: 10px double;
+    }
+    .st2{
+        height:auto;
+    }
+    .sw3{
+        height:auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        margin-top: 30px;
+    }
+    .sw3 .w4{
+        width:35%;
+        height:380px;
+        margin-top:20px;
+    }
+    .slider{
+        width: 100%;
+        margin-left:20px;
+    }
+    .o1{
+        margin-top:30px;
+    }
+    .st4{
+        width:100%;
+        height:auto;
+    }
+    .sw4{
+        width:100%;
+        height:auto;
+    }
+    .w6{
+        width:50%;
+        height:500px;
+    }
+   .w6 .e1{
+        margin-left: 370px;
+        top:80px;
+        width: 32%;
+        height:160px;
+    }
+    .e1 h1{
+        font-size:30px;
+    }
+    .w7{
+        width:50%;
+        height: 500px;
+    }
+    .w7 h3{
+        font-size :50px;
+        margin-top: 80px;
+    }
+    .w7 h1{
+        font-size:80px;
+    }
+    .w7 h4{
+        font-size:25px;
+    }
+    .w7 p{
+        font-size:20px;
+    }
+    .w7 button{
+        width:40%;
+        margin-top: 40px;
+    }
+    .swiper{
+        margin-top:40px;
+    }
+}
